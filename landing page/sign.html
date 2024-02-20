@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #252424;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: url(logo.png);
+      background-repeat: no-repeat;
+      background-size: 1400px 600px
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #101010;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h1{
+        color: #fff;
+    }
+    .container p{
+        color: #fff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, button {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .social-button {
+      background-color: #31e157;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #101010;
+      padding: 10px;
+      margin-top: auto;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Spotify</h1>
+    <p>Sign up to start listening</p>
+    <form>
+      <input type="email" placeholder="Email address" name="email" id="email">
+      <label for="phone">Use phone number instead.</label>
+      <input type="text" id="phone" name="phone" placeholder="Phone number">
+      <input type="submit" value="Next">
+      <p>or</p>
+      <button class="social-button" id="google-button">Sign up with Google</button>
+      <button class="social-button" id="facebook-button">Sign up with Facebook</button>
+      <button class="social-button" id="apple-button">Sign up with Apple</button>
+      <p>Already have an account? <a href="#">Log in here</a>.</p>
+    </form>
+  </div>
+  <footer>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</footer>
+</body>
+</html>
